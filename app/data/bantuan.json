@@ -1,0 +1,24 @@
+{
+  "bantuan": [
+    {
+      "id": 1,
+      "pertanyaan": "Apa itu E-Wartawan Pelalawan?",
+      "jawaban": "e-Wartawan adalah aplikasi yang dibangun secara khusus untuk mengoptimalkan media IT dan efektifitas kerjasama dengan media massa. Dengan adanya aplikasi ini diharapkan terbangun kerjasama dan kemitraan yang baik antara Pemerintah Kabupaten Kampar dengan insan pers."
+    },
+    {
+      "id": 2,
+      "pertanyaan": "Fitur Apa Saja Yang Ditawarkan Oleh E-Wartawan?",
+      "jawaban": "Secara garis besar e-Wartawan mengatur parameter poin sesuai dengan kategori media. Kriteria poin sebagaimana dimaksud sebagai Standar Operasional Prosedur dalam menetapkan harga, baik itu dalam bentuk advertorial, galeri foto maupun iklan layanan masyarakat."
+    },
+    {
+      "id": 3,
+      "pertanyaan": "Kategori Media Apa Saja Yang Diatur Oleh E-Wartawan?",
+      "jawaban": "Media cetak (harian dan mingguan), media online, radio, dan televisi."
+    },
+    {
+      "id": 4,
+      "pertanyaan": "Manual Book Penggunaan e-Wartawan",
+      "jawaban": "Manual Book Penggunaan e-wartawan secara lengkap dapat di download disini link download"
+    }
+  ]
+}

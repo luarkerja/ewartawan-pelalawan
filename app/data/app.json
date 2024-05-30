@@ -1,0 +1,17 @@
+{
+  "app": [
+    {
+      "name": "E-Wartawan Pelalawan",
+      "dec": "E-Wartawan Pelalawan",
+      "version": "1.0.0",
+      "developer": [
+        {
+          "name": "Hasan Suryaman",
+          "email": "hasan.suryaman@gmail.com",
+          "website": "hasansuryaman.com",
+          "phone": "0822-8806-3636"
+        }
+      ]
+    }
+  ]
+}
