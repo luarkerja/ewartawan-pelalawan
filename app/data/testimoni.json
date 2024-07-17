@@ -1,0 +1,52 @@
+{
+  "testimoni": [
+    {
+      "id": 1,
+      "name": "Hasan Suryaman",
+      "image": "https://avatars.githubusercontent.com/u/3890123?v=4",
+      "isi": "Dengan adanya e-wartawan, para pihak dapat mengoptimalkan media IT, dan tentunya sangat memberikan transparansi pada setiap prosesnya."
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "image": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "isi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem."
+    },
+    {
+      "id": 3,
+      "name": "Diana",
+      "image": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "isi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem."
+    },
+    {
+      "id": 4,
+      "name": "Diana",
+      "image": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "isi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem."
+    },
+    {
+      "id": 5,
+      "name": "Diana",
+      "image": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "isi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem."
+    },
+    {
+      "id": 6,
+      "name": "Diana",
+      "image": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "isi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem."
+    },
+    {
+      "id": 7,
+      "name": "Diana",
+      "image": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "isi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem."
+    },
+    {
+      "id": 8,
+      "name": "Diana",
+      "image": "https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "isi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem."
+    }
+  ]
+}

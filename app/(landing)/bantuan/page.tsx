@@ -11,6 +11,9 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import data from "@/data/bantuan.json";
 import Link from "next/link";
+import { CTA2 } from "@/components/cta";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 
 type Bantuan = {
   bantuan: {
@@ -27,14 +30,16 @@ export default function BantuanPage() {
   }, []);
 
   return (
+    <>
+    <Navbar />
     <div className="w-full py-20 lg:py-40">
       <div className="mx-auto grid w-full max-w-6xl gap-2">
         <div className="grid lg:grid-cols-2 gap-10">
           <div className="flex gap-10 flex-col">
             <div className="flex gap-4 flex-col">
-              <div>
+              {/* <div>
                 <Badge variant="outline">Bantuan</Badge>
-              </div>
+              </div> */}
               <div className="flex gap-2 flex-col">
                 <h4 className="text-3xl md:text-5xl tracking-tighter max-w-xl text-left font-regular">
                   Ini adalah langkah awal untuk memulai.
@@ -59,7 +64,7 @@ export default function BantuanPage() {
           <Accordion type="single" collapsible className="w-full" defaultValue="index-1">
             {items.map((item, key) => (
               <AccordionItem key={item.id} value={"index-" + item.id}>
-                <AccordionTrigger>{item.pertanyaan}</AccordionTrigger>
+                <AccordionTrigger className="text-left">{item.pertanyaan}</AccordionTrigger>
                 <AccordionContent>{item.jawaban}</AccordionContent>
               </AccordionItem>
             ))}
@@ -70,5 +75,8 @@ export default function BantuanPage() {
             <div className="h-40"></div>
       </div>
     </div>
+    <CTA2 />
+    <Footer />
+    </>
   );
 }

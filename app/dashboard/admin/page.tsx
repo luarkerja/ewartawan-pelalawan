@@ -98,7 +98,7 @@ export default function DashboardAdmin() {
             </Button>
           </SheetTrigger>
           <SheetContent side="left">
-            <nav className="grid gap-6 text-medium font-medium">
+            <nav className="grid gap-6 text-lg font-medium">
               <Link
                 href="#"
                 className="flex items-center gap-2 text-lg font-semibold"
@@ -156,16 +156,15 @@ export default function DashboardAdmin() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               <DropdownMenuLabel>
-                <p className="text-primary text-md">Hasan Suryaman</p>
+                <p></p>
                 <p className="text-xs font-normal">hasan.suryaman@gmail.com</p>
               </DropdownMenuLabel>
               
               <DropdownMenuSeparator />
               <DropdownMenuItem>Settings</DropdownMenuItem>
               <DropdownMenuItem>Support</DropdownMenuItem>
-              <DropdownMenuItem>Tentang</DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Keluar</DropdownMenuItem>
+              <DropdownMenuItem>Logout</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>

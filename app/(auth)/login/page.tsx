@@ -1,10 +1,24 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { z } from "zod";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+const userSchema = z
+  .string()
+  .min(5, { message: "Must be 5 or more characters long" });
 
+const passSchema = z
+  .string()
+  .min(8, { message: "Must be 8 or more characters long" })
+  .regex(new RegExp(".*[A-Z].*"), {
+    message: "Must conatain one uppercase character",
+  })
+  .regex(new RegExp(".*\\d.*"), { message: "Must contains one number" })
+  .regex(new RegExp(".*[`~<>?,./!@#$%^&*()\\-_+=\"'|{}\\[\\];:\\\\].*"), {
+    message: "Must contain one special character",
+  });
 export default function LoginPage() {
   return (
     <div className="w-full h-screen lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px]">
@@ -13,7 +27,8 @@ export default function LoginPage() {
           <div className="grid gap-2 text-center">
             <h1 className="text-3xl font-bold">Login</h1>
             <p className="text-balance text-sm text-muted-foreground">
-              Untuk masuk ke akun anda silahkan isi email dan password yang sudah terdaftar.
+              Untuk masuk ke akun anda silahkan isi email dan password yang
+              sudah terdaftar.
             </p>
           </div>
           <div className="grid gap-4">
@@ -36,7 +51,12 @@ export default function LoginPage() {
                   Lupa password?
                 </Link>
               </div>
-              <Input id="password" type="password" placeholder="Masukkan password anda" required />
+              <Input
+                id="password"
+                type="password"
+                placeholder="Masukkan password anda"
+                required
+              />
             </div>
             <Button type="submit" className="w-full">
               Login
@@ -63,5 +83,5 @@ export default function LoginPage() {
         />
       </div>
     </div>
-  )
+  );
 }

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "pertanyaan": "Apa itu E-Wartawan Pelalawan?",
-      "jawaban": "e-Wartawan adalah aplikasi yang dibangun secara khusus untuk mengoptimalkan media IT dan efektifitas kerjasama dengan media massa. Dengan adanya aplikasi ini diharapkan terbangun kerjasama dan kemitraan yang baik antara Pemerintah Kabupaten Kampar dengan insan pers."
+      "jawaban": "e-Wartawan adalah aplikasi yang dibangun secara khusus untuk mengoptimalkan media IT dan efektifitas kerjasama dengan media massa dan. Dengan adanya aplikasi ini diharapkan terbangun kerjasama dan kemitraan yang baik antara Pemerintah Kabupaten Pelalawan dengan insan pers."
     },
     {
       "id": 2,
@@ -17,8 +17,23 @@
     },
     {
       "id": 4,
-      "pertanyaan": "Manual Book Penggunaan e-Wartawan",
-      "jawaban": "Manual Book Penggunaan e-wartawan secara lengkap dapat di download disini link download"
+      "pertanyaan": "Siapa Saja yang Bisa Menggunakan E-Wartawan?",
+      "jawaban": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem."
+    },
+    {
+      "id": 5,
+      "pertanyaan": "Apa Saja Syarat untuk Mendaftar Pada E-Wartawan Pelalawan?",
+      "jawaban": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem."
+    },
+    {
+      "id": 6,
+      "pertanyaan": "Apa Dasar Dibangunnya E-Wartawan Pelalawan?",
+      "jawaban": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem."
+    },
+    {
+      "id": 7,
+      "pertanyaan": "Apa yang harus saya lakukan Jika Kesulitan dalam Menggunakan E-Wartawan?",
+      "jawaban": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quidem."
     }
   ]
 }

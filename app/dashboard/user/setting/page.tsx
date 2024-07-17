@@ -1,7 +1,9 @@
-import Link from "next/link"
-import { CircleUser, Menu, Package2, Search } from "lucide-react"
+"use client";
 
-import { Button } from "@/components/ui/button"
+import Link from "next/link";
+import { CircleUser, Menu, Package2, Search } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -9,8 +11,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Checkbox } from "@/components/ui/checkbox"
+} from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -18,11 +20,61 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from "@/components/ui/input"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+} from "@/components/ui/dropdown-menu";
+import { Input } from "@/components/ui/input";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import { useState } from "react";
 
+export interface SimpleDialogProps {
+  open: boolean;
+  onClose: (value: string) => void;
+}
+
+function SimpleDialog(props: SimpleDialogProps) {
+  const { onClose, open } = props;
+
+  return (
+    <AlertDialog >
+      <AlertDialogContent className="bg-opacity-10">
+        <AlertDialogHeader>
+          <AlertDialogTitle>Yakin ingin keluar?</AlertDialogTitle>
+          <AlertDialogDescription>
+            Pastikan anda sudah melakukan penyimpanan terhadap perubahan yang
+            dilakukan sebelum keluar dar aplikasi E-Wartawan Pelalawan.
+          </AlertDialogDescription>
+        </AlertDialogHeader>
+        <AlertDialogFooter>
+          <AlertDialogCancel>Batal</AlertDialogCancel>
+          <AlertDialogAction className="bg-red-600 hover:bg-red-700">
+            Keluar
+          </AlertDialogAction>
+        </AlertDialogFooter>
+      </AlertDialogContent>
+      </AlertDialog>
+  );
+}
 export default function DashboardSetting() {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <div className="flex min-h-screen w-full flex-col">
       <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
@@ -139,7 +191,10 @@ export default function DashboardSetting() {
               <DropdownMenuItem>Settings</DropdownMenuItem>
               <DropdownMenuItem>Support</DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Logout</DropdownMenuItem>
+              <DropdownMenuItem onClick={handleClickOpen}>
+                Logout
+                <SimpleDialog open={open} onClose={handleClose} />
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
@@ -150,7 +205,8 @@ export default function DashboardSetting() {
         </div>
         <div className="mx-auto grid w-full max-w-6xl items-start gap-6 md:grid-cols-[180px_1fr] lg:grid-cols-[250px_1fr]">
           <nav
-            className="grid gap-4 text-sm text-muted-foreground" x-chunk="dashboard-04-chunk-0"
+            className="grid gap-4 text-sm text-muted-foreground"
+            x-chunk="dashboard-04-chunk-0"
           >
             <Link href="#" className="font-semibold text-primary">
               General
@@ -211,5 +267,5 @@ export default function DashboardSetting() {
         </div>
       </main>
     </div>
-  )
+  );
 }
