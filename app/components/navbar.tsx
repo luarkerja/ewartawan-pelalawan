@@ -9,7 +9,7 @@ import { ModeToggle } from "./theme-toggle";
 
 const NavLinks = [
   { id: 1, name: "Beranda", path: "/" },
-  { id: 2, name: "Berita", path: "/berita" },
+  // { id: 2, name: "Berita", path: "/berita" },
   { id: 3, name: "Pengumuman", path: "/pengumuman" },
   { id: 4, name: "Bantuan", path: "/bantuan" },
   { id: 5, name: "Kontak", path: "/kontak" },
