@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE `Berita` ADD COLUMN `read` INTEGER NOT NULL DEFAULT 0,
+    MODIFY `isi_berita` TEXT NOT NULL;

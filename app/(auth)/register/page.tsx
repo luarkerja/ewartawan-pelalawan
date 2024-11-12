@@ -15,9 +15,7 @@ const passSchema = z
   .regex(new RegExp(".*[A-Z].*"), {
     message: "Must conatain one uppercase character",
   })
-  .regex(new RegExp(".*\\d.*"), { 
-    message: "Must contains one number" 
-  })
+  .regex(new RegExp(".*\\d.*"), { message: "Must contains one number" })
   .regex(new RegExp(".*[`~<>?,./!@#$%^&*()\\-_+=\"'|{}\\[\\];:\\\\].*"), {
     message: "Must contain one special character",
   });
@@ -27,7 +25,7 @@ export default function LoginPage() {
       <div className="flex items-center justify-center py-12">
         <div className="mx-auto grid w-[350px] gap-6">
           <div className="grid gap-2 text-center">
-            <h1 className="text-3xl font-bold">Login</h1>
+            <h1 className="text-3xl font-bold">Registrasi</h1>
             <p className="text-balance text-sm text-muted-foreground">
               Untuk masuk ke akun anda silahkan isi email dan password yang
               sudah terdaftar.
@@ -69,7 +67,7 @@ export default function LoginPage() {
           </div>
           <div className="mt-4 text-center text-sm">
             Tidak punya akun?{" "}
-            <Link href="/register" className="underline">
+            <Link href="#" className="underline">
               Daftar Akun
             </Link>
           </div>

@@ -1,14 +1,15 @@
 import { CTA2 } from '@/components/cta'
-import Navbar from '@/components/navbar'
 import React from 'react'
 import Footer from '@/components/footer'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import prisma from '@/lib/prisma';
 
+const posts = await prisma.post.findMany()
 export default function BeritaPage() {
   return (
     <>
-        <Navbar />
+props: { posts }
         <div className="w-full py-20 lg:py-40">
     <div className="mx-auto grid w-full max-w-6xl gap-2">
       <div className="flex w-full flex-col sm:flex-row sm:justify-between sm:items-center gap-8">

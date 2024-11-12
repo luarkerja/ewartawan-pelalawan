@@ -6,7 +6,6 @@ import 'froala-editor/css/froala_style.min.css';
 import 'froala-editor/js/plugins.pkgd.min.js';
 import 'font-awesome/css/font-awesome.min.css';
 import FroalaEditor from 'react-froala-wysiwyg';
-// import { Navbar } from '@/components';
 
 export default function EditorComponent() {
   const [title, setTitle] = useState('');
@@ -17,7 +16,6 @@ export default function EditorComponent() {
 
   return (
     <>
-      {/* <Navbar /> */}
       <div className="editor-container pt-5 mx-auto max-w-4xl">
         <div className="editor-title-input">
           <FroalaEditor 

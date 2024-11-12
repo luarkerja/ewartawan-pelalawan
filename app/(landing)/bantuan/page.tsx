@@ -13,7 +13,6 @@ import data from "@/data/bantuan.json";
 import Link from "next/link";
 import { CTA2 } from "@/components/cta";
 import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
 
 type Bantuan = {
   bantuan: {
@@ -31,7 +30,6 @@ export default function BantuanPage() {
 
   return (
     <>
-    <Navbar />
     <div className="w-full py-20 lg:py-40">
       <div className="mx-auto grid w-full max-w-6xl gap-2">
         <div className="grid lg:grid-cols-2 gap-10">

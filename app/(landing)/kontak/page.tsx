@@ -10,17 +10,16 @@ import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Trusted from "@/components/trusted";
 import { CTA2 } from "@/components/cta";
+import App from "@/components/map";
 
 const KontakPage = () => {
   const [date, setDate] = useState<Date | undefined>(new Date());
 
   return (
     <>
-    <Navbar />
     <div className="w-full py-20 lg:py-40">
       <div className="container max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-10">
@@ -118,6 +117,7 @@ const KontakPage = () => {
         </div>
       </div>
     </div>
+    <App />
     <CTA2 />
     <Footer />
     </>

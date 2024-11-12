@@ -17,7 +17,6 @@ import Footer from "@/components/footer";
 import BeritaLanding from "@/components/berita-landing";
 import Trusted from "@/components/trusted";
 import { CTA2 } from "@/components/cta";
-import Navbar from "@/components/navbar";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 export default function HomePage() {
@@ -31,7 +30,6 @@ export default function HomePage() {
 
   return (
     <>
-    <Navbar />
     
     <div className="w-full py-20 lg:py-40">
       <div className="mx-auto grid w-full max-w-6xl gap-2">
