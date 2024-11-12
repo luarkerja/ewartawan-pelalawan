@@ -1,3 +1,11 @@
+import React from 'react'
+
+export default function BeritaPage() {
+  return (
+    <div>BeritaPage</div>
+  )
+}
+
 // import { CTA2 } from '@/components/cta'
 // import React from 'react'
 // import Footer from '@/components/footer'
